@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Registration</title>
+    <link rel="stylesheet" href="5_Employee Registration Form.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Employee Registration Form</h2>
+
+    <form id="regForm">
+        <label>Name:</label>
+        <input type="text" id="name" required>
+
+        <label>Employee ID:</label>
+        <input type="text" id="empid" required>
+
+        <label>Address:</label>
+        <textarea required></textarea>
+
+        <label>Department:</label>
+        <input type="text" required>
+
+        <label>Mobile Number:</label>
+        <input type="tel" required>
+
+        <label>City:</label>
+        <select required>
+            <option value="">--Select City--</option>
+            <option>Chennai</option>
+            <option>Delhi</option>
+            <option>Mumbai</option>
+            <option>Bangalore</option>
+        </select>
+
+        <input type="submit" value="Register">
+    </form>
+
+    <!-- Acknowledgement Message -->
+    <p id="message"></p>
+</div>
+
+<script>
+document.getElementById("regForm").addEventListener("submit", function(event) {
+    event.preventDefault();  // Prevent form refresh
+
+    var name = document.getElementById("name").value;
+    var empid = document.getElementById("empid").value;
+
+    document.getElementById("message").innerHTML =
+        "Registration Successful! <br> Welcome " + name +
+        " (Employee ID: " + empid + ")";
+    
+    document.getElementById("message").style.color = "green";
+    document.getElementById("message").style.fontWeight = "bold";
+});
+</script>
+
+</body>
+</html>
