@@ -1,0 +1,19 @@
+body {
+    background-image: url("background.gif");
+    background-size: 400px 400px;  /* Width & Height */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    transition: background-size 2s;
+}
+
+body:hover {
+    background-size: 600px 600px; /* Transition effect */
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 200px;
+    opacity: 0.8; /* Transparency */
+}

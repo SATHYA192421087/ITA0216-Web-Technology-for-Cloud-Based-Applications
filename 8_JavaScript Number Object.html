@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Object Example</title>
+</head>
+<body>
+
+<h2>JavaScript Number Operations</h2>
+
+<p id="output"></p>
+
+<script>
+    let num = 5;
+
+    // Exponential value
+    let expValue = num.toExponential();
+
+    // Limit digits after decimal
+    let decimalValue = 5.6789123;
+    let fixedValue = decimalValue.toFixed(2);
+
+    // Convert number to string
+    let numberString = num.toString();
+
+    // Negative Infinity
+    let negativeInfinity = -Number.POSITIVE_INFINITY;
+
+    document.getElementById("output").innerHTML =
+        "Exponential: " + expValue + "<br>" +
+        "Fixed (2 decimals): " + fixedValue + "<br>" +
+        "Number to String: " + numberString + "<br>" +
+        "Negative Infinity: " + negativeInfinity;
+</script>
+
+</body>
+</html>

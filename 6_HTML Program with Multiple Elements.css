@@ -1,0 +1,38 @@
+.heading {
+    color: darkblue;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.text {
+    font-size: 18px;
+    color: green;
+    margin: 15px;
+}
+
+.box {
+    width: 200px;
+    padding: 20px;
+    margin: 15px;
+    background-color: lightgray;
+    border: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.btn {
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: darkblue;
+}
+
+.list {
+    color: purple;
+    font-size: 18px;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Background Repeat Using CSS</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background-image:url("https://www.transparenttextures.com/patterns/cubes.png");
+background-repeat:repeat;
+background-color:#d9e7f3;
+
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+/* Main card */
+
+.container{
+text-align:center;
+background:rgba(255,255,255,0.9);
+padding:40px;
+border-radius:18px;
+box-shadow:0 15px 40px rgba(0,0,0,0.25);
+width:900px;
+}
+
+/* Heading */
+
+h1{
+color:#174a92;
+margin-bottom:10px;
+}
+
+p{
+color:#333;
+margin-bottom:40px;
+}
+
+/* Boxes layout */
+
+.box-container{
+display:flex;
+justify-content:space-around;
+}
+
+/* Box style */
+
+.box{
+width:180px;
+height:120px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.25);
+transition:0.3s;
+margin-bottom:10px;
+}
+
+/* Hover animation */
+
+.box:hover{
+transform:scale(1.1);
+box-shadow:0 10px 25px rgba(0,0,0,0.35);
+}
+
+/* Background image */
+
+.repeat{
+background-image:url("https://www.transparenttextures.com/patterns/brick-wall.png");
+background-repeat:repeat;
+}
+
+.norepeat{
+background-image:url("https://www.transparenttextures.com/patterns/brick-wall.png");
+background-repeat:no-repeat;
+background-position:center;
+}
+
+.repeatx{
+background-image:url("https://www.transparenttextures.com/patterns/brick-wall.png");
+background-repeat:repeat-x;
+}
+
+.repeaty{
+background-image:url("https://www.transparenttextures.com/patterns/brick-wall.png");
+background-repeat:repeat-y;
+}
+
+/* Label */
+
+.label{
+font-weight:bold;
+color:#174a92;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Background Repeat Using CSS</h1>
+<p>This page demonstrates different background-repeat properties in CSS.</p>
+
+<div class="box-container">
+
+<div>
+<div class="box repeat"></div>
+<div class="label">repeat</div>
+</div>
+
+<div>
+<div class="box norepeat"></div>
+<div class="label">no-repeat</div>
+</div>
+
+<div>
+<div class="box repeatx"></div>
+<div class="label">repeat-x</div>
+</div>
+
+<div>
+<div class="box repeaty"></div>
+<div class="label">repeat-y</div>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
