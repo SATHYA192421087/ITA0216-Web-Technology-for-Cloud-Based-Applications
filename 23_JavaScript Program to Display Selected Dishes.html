@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hotel Dish Selection</title>
+
+<style>
+body{
+font-family: Arial;
+background:#f2f2f2;
+text-align:center;
+padding:40px;
+}
+
+.container{
+background:white;
+width:400px;
+margin:auto;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+button{
+padding:10px 20px;
+background:#28a745;
+border:none;
+color:white;
+font-size:16px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#1e7e34;
+}
+
+#result{
+margin-top:20px;
+font-weight:bold;
+color:#333;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>🍽 Select Your Dishes</h2>
+
+<input type="checkbox" name="dish" value="Dosa"> Dosa <br><br>
+<input type="checkbox" name="dish" value="Idli"> Idli <br><br>
+<input type="checkbox" name="dish" value="Biryani"> Biryani <br><br>
+<input type="checkbox" name="dish" value="Fried Rice"> Fried Rice <br><br>
+<input type="checkbox" name="dish" value="Noodles"> Noodles <br><br>
+
+<button onclick="confirmOrder()">Confirm Order</button>
+
+<p id="result"></p>
+
+</div>
+
+<script>
+
+function confirmOrder(){
+
+var dishes=document.getElementsByName("dish");
+
+var selected=[];
+
+for(var i=0;i<dishes.length;i++)
+{
+if(dishes[i].checked)
+{
+selected.push(dishes[i].value);
+}
+}
+
+if(selected.length==0)
+{
+document.getElementById("result").innerHTML="No dish selected";
+}
+else
+{
+document.getElementById("result").innerHTML="Confirmed Dishes: "+selected.join(", ");
+}
+
+}
+
+</script>
+
+</body>
+</html>

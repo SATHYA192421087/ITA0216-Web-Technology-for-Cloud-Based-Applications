@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>String Object Example</title>
+</head>
+
+<body>
+
+<h2>String Object Methods</h2>
+
+<p id="result"></p>
+
+<script>
+
+var str = "Hello";
+var str2 = "World";
+
+var char = str.charAt(1);
+
+var unicode = str.charCodeAt(1);
+
+var join = str.concat(" ", str2);
+
+var unicodeToString = String.fromCharCode(65);
+
+var upper = str.toUpperCase();
+
+document.getElementById("result").innerHTML =
+"Character at index 1: " + char + "<br>" +
+"Unicode at index 1: " + unicode + "<br>" +
+"Joined String: " + join + "<br>" +
+"Unicode to String: " + unicodeToString + "<br>" +
+"Uppercase: " + upper;
+
+</script>
+
+</body>
+</html>
